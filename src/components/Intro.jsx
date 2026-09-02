@@ -8,10 +8,10 @@ function Intro({ onFinish }) {
   const [typed, setTyped] = useState("");
 
   useEffect(() => {
-    // 1: portal يظهر
+    // 1:
     setTimeout(() => setPhase(1), 300);
 
-    // 2: يظهر AMINE
+    // 2: 
     setTimeout(() => setPhase(2), 1200);
 
     // 3: explosion
@@ -28,7 +28,7 @@ function Intro({ onFinish }) {
       if (i > text.length) clearInterval(typing);
     }, 60);
 
-    // 5: دخول الموقع
+    // 5: 
     setTimeout(() => {
       setPhase(5);
       setTimeout(onFinish, 1000);
@@ -44,7 +44,7 @@ function Intro({ onFinish }) {
       <div className="portal"></div>
 
       {/* LOGO */}
-      <h1 className="logo">AMINE</h1>
+      <h1 className="logo">SUNITA</h1>
 
       {/* TEXT */}
       <h1 className="main-text">

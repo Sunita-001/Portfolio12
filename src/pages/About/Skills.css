@@ -87,3 +87,10 @@
     transform: translateX(-50%);
   }
 }
+.c-icon {
+    font-size: 45px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

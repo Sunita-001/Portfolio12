@@ -1,115 +1,118 @@
-.project .title {
-  text-align: center;
+.project {
+  padding: 70px 80px;
   margin-bottom: 30px;
 }
 
+.project .title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
 .project .title h2 {
-  font-size: 28px;
+  font-size: 32px;
   position: relative;
   display: inline-block;
+  margin: 0;
 }
 
 .project .title h2::after {
   content: "";
-  width: 60%;
-  height: 2px;
+  width: 60px;
+  height: 3px;
   background: #00f0ff;
   display: block;
-  margin: 8px auto 0;
+  margin: 10px auto 0;
   border-radius: 2px;
+  box-shadow: 0 0 10px #00f0ff;
 }
 
+/* Projects container */
+
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 1000px;
   margin: auto;
 }
 
-.project-card {
-  border-radius: 12px;
-  overflow: hidden;
-  background: #0a0a0f;
-  border: 1px solid rgba(255,255,255,0.05);
-  transition: 0.25s ease;
-  cursor: pointer;
-}
+/* Coming soon card */
 
-.project-card img {
-  width: 100%;
-  height: 130px;
-  object-fit: cover;
-  transition: 0.3s;
+.project-card {
+  width: 430px;
+  min-height: 210px;
+  padding: 28px 30px;
+  box-sizing: border-box;
+
+  border-radius: 16px;
+  background: rgba(10, 10, 15, 0.85);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: all 0.35s ease;
+  cursor: default;
+
+  text-align: center;
 }
 
 .project-card h3 {
-  font-size: 15px;
-  padding: 10px 80px;
-  margin: 8px 10px 4px;
+  font-size: 20px;
+  margin: 0 0 18px;
 }
 
 .project-card p {
-  font-size: 12px;
-  padding: 0px 20px;
-  margin: 0 10px 6px;
-  opacity: 0.7;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 auto 18px;
+  opacity: 0.75;
+  max-width: 350px;
 }
 
-.skills {
-  margin: 0 10px 6px;
+/* Technology / status tags */
+
+.project-card .skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
 }
 
-.skills a {
-  font-size: 10px;
-  padding: 3px 8px;
-  margin: 2px;
+.project-card .skills span {
+  font-size: 11px;
+  padding: 5px 12px;
   border-radius: 20px;
+
   border: 1px solid #00f0ff;
   color: #00f0ff;
-  transition: 0.2s;
+
+  transition: 0.25s ease;
 }
 
-.skills a:hover {
+.project-card .skills span:hover {
   background: #00f0ff;
-  color: black;
-  box-shadow: 0 0 8px #00f0ff;
+  color: #000;
+  box-shadow: 0 0 10px #00f0ff;
 }
 
-.btns {
-  display: flex;
-  gap: 6px;
-  padding: 8px 10px 10px;
-}
-
-.btn {
-  flex: 1;
-  font-size: 11px;
-  padding: 6px;
-  border-radius: 6px;
-  text-align: center;
-  background: rgba(255,255,255,0.08);
-  color: white;
-  transition: 0.2s;
-}
-
-.btn:hover {
-  background: #00f0ff;
-  color: black;
-}
+/* Subtle hover */
 
 .project-card:hover {
-  transform: translateY(-6px);
-  background: linear-gradient(
-    135deg,
-    #0f766e,
-    #1e3a8a,
-    #020617
-  );
+  transform: translateY(-8px);
 
-  box-shadow: 0 0 20px rgba(0,240,255,0.5);
+  border-color: rgba(0, 240, 255, 0.4);
+
+  box-shadow:
+    0 0 25px rgba(0, 240, 255, 0.15),
+    0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
-.project-card:hover img {
-  transform: scale(1.05);
+/* Remove old project image/button styling */
+
+.project-card img {
+  display: none;
+}
+
+.project-card .btns {
+  display: none;
 }

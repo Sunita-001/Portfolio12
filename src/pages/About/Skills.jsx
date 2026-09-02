@@ -1,64 +1,48 @@
 import "./Skills.css";
 
 import {
-FaHtml5,
-FaCss3Alt,
-FaJs,
-FaReact,
-FaGitAlt,
-FaGithub,
-FaFigma,
-FaNodeJs,
-FaJava
+    FaHtml5,
+    FaCss3Alt,
+    FaJs,
+    FaReact,
+    FaGitAlt,
+    FaGithub,
+    FaJava
 } from "react-icons/fa";
 
 import {
-SiUnity,
-SiTailwindcss,
-SiFirebase,
-SiMongodb,
-SiExpress,
-SiMysql,
-SiPhp
+    SiPython,
+    SiCplusplus,
+    SiMysql
 } from "react-icons/si";
 
-function Skills(){
+function Skills() {
+    return (
+        <div className="skills">
+            <div className="skills-slider">
+                <div className="skills-track">
 
-return(
+                    <FaHtml5 />
+                    <FaCss3Alt />
+                    <FaJs />
+                    <FaReact />
 
-<div className="skills">
-<div className="skills-slider">
-<div className="skills-track">
+                    <SiPython />
+                    <SiCplusplus />
+                    <FaJava />
 
-<FaHtml5/>
-<FaCss3Alt/>
-<FaJs/>
-<FaReact/>
+                    <SiMysql />
 
-<FaJava/>
-<SiMysql/>
-<SiPhp/>
+                    <FaGitAlt />
+                    <FaGithub />
 
-<FaNodeJs/>
-<SiExpress/>
-<SiMongodb/>
+                    {/* C */}
+                    <span className="c-icon">C</span>
 
-<FaGitAlt/>
-<FaGithub/>
-<FaFigma/>
-
-<SiUnity/>
-<SiTailwindcss/>
-<SiFirebase/>
-
-</div>
-
-</div>
-
-</div>
-
-)
-
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default Skills;
