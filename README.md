@@ -1,4 +1,4 @@
-![Logo](Photo.png)
+
 
 # Sunita Portfolio Showcase 💻
 
